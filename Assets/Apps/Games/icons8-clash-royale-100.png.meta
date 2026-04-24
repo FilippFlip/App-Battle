@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-clash-royale-100_0: -4666132934511983342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

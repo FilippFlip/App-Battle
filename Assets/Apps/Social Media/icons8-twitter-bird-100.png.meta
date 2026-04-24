@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-twitter-bird-100_0: 4024718243095084307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

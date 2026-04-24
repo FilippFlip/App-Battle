@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-free-fire-96_0: 2099148875867363440
+      icons8-free-fire-96_1: -3712523032140057614
+      icons8-free-fire-96_2: -417652348524327680
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

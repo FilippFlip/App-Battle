@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-duolingo-logo-96_0: 7438749273017169026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

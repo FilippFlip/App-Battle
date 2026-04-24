@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-rockstar-games-96_0: 4758123349650727397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

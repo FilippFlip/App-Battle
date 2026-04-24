@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-netflix-desktop-app-96_0: 7996332875146939049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

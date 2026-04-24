@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-snapchat-500_0: 4742540321443319250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

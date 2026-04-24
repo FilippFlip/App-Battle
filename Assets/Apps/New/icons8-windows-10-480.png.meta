@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-windows-10-480_0: -2439974370649787051
+      icons8-windows-10-480_1: 1044921895227899793
+      icons8-windows-10-480_2: -1488689598778021345
+      icons8-windows-10-480_3: -5742097761182112737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

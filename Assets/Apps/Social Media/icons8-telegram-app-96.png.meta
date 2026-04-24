@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-telegram-app-96_0: -8095188460993843852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

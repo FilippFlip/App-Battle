@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-facetime-96_0: -1582607233176343752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

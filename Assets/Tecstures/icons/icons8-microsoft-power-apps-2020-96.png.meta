@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-microsoft-power-apps-2020-96_0: -6415164963726938354
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

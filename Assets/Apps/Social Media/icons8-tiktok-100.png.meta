@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-tiktok-100_0: -940077363493050984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

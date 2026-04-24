@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-adobe-xd-96_0: -1483970811066585243
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

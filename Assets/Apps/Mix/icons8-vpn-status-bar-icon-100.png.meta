@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-vpn-status-bar-icon-100_0: -7864810360394428358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-youtube-96_0: -2927074479626610675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

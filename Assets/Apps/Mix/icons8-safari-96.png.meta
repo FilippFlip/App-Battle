@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-safari-96_0: 3509926895649645416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

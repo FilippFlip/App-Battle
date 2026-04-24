@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-post-box-100_0: 2877184773361641706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

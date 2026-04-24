@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-google-meet-96_0: 4828498781459872521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

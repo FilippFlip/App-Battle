@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-instagram-96_0: 1290100202398596917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

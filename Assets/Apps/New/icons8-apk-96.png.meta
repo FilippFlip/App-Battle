@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-apk-96_0: -8689921237572854905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

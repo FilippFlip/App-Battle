@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-fall-guys-96_0: -2450462816481386112
+      icons8-fall-guys-96_1: 1647787525734872562
+      icons8-fall-guys-96_2: -2037184353811598228
+      icons8-fall-guys-96_3: -5716250156283082835
+      icons8-fall-guys-96_4: -5048222551225950734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

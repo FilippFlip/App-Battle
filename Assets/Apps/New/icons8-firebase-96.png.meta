@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-firebase-96_0: 6018297764730067311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-wifi-96_0: 4527114296898626322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
