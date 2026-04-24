@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
+  m_Name: MixLootBox
+  m_EditorClassIdentifier: 
+  lootBoxData:
+  - item: {fileID: 11400000, guid: ad8d916ff2df48c48bbdfce45c05acb5, type: 2}
+    weight: 3630
+  - item: {fileID: 11400000, guid: 36b4a41883d0d8d4cb962cbc49fb6a0e, type: 2}
+    weight: 1500
+  - item: {fileID: 11400000, guid: 170c7504bbb04684da0d86e81820286f, type: 2}
+    weight: 1200
+  - item: {fileID: 11400000, guid: cd0a6ddeaa5735e4fbddfccf5a28db87, type: 2}
+    weight: 800
+  - item: {fileID: 11400000, guid: 5e5cf6bdc2151b44c9812b92c3725da6, type: 2}
+    weight: 800
+  - item: {fileID: 11400000, guid: ed1fbb3fefec62e439b630fa49b49772, type: 2}
+    weight: 700
+  - item: {fileID: 11400000, guid: 5a24fa81f827cc145bbae633c79646fc, type: 2}
+    weight: 600
+  - item: {fileID: 11400000, guid: 1df2b0ec105231048bea0e878cf69904, type: 2}
+    weight: 400
+  - item: {fileID: 11400000, guid: be6f0e895a07b6849b62dab664967a74, type: 2}
+    weight: 300
+  - item: {fileID: 11400000, guid: 28da230ba80fb0540a9c1964d9f5842e, type: 2}
+    weight: 60
+  - item: {fileID: 11400000, guid: 1b6c413c67db7d749afb00bed8f34a2c, type: 2}
+    weight: 10
+  icon: {fileID: 2877184773361641706, guid: 3d10ba6dca110484db2ca197101f577d, type: 3}

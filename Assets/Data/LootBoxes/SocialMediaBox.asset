@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
+  m_Name: SocialMediaBox
+  m_EditorClassIdentifier: 
+  lootBoxData:
+  - item: {fileID: 11400000, guid: 873d9d7ee553ceb42be57fef1120abba, type: 2}
+    weight: 4340
+  - item: {fileID: 11400000, guid: 913aa4daac42c07469f409392c72944c, type: 2}
+    weight: 1200
+  - item: {fileID: 11400000, guid: 3f00940b7c54cb44a9a5e1ca4798719c, type: 2}
+    weight: 1200
+  - item: {fileID: 11400000, guid: 7eb31d60c69f2e34e953ceddcc97ac0a, type: 2}
+    weight: 1000
+  - item: {fileID: 11400000, guid: e40ba1aada4ca644fba67b51d3042bac, type: 2}
+    weight: 800
+  - item: {fileID: 11400000, guid: 28d40fbeac56d634d887e82c865f9b8e, type: 2}
+    weight: 500
+  - item: {fileID: 11400000, guid: 7ea9424c9b2027548bc34278747209e4, type: 2}
+    weight: 500
+  - item: {fileID: 11400000, guid: 3049048c05c1e4745b5d7d74df8b96bd, type: 2}
+    weight: 400
+  - item: {fileID: 11400000, guid: 20b2a528dd78edd4fa6b99a9f4e7793f, type: 2}
+    weight: 50
+  - item: {fileID: 11400000, guid: 0ad8e2dc63fca0d4a851391e3013dca5, type: 2}
+    weight: 9
+  - item: {fileID: 11400000, guid: bb37c5fd913892d41a458e88f9f69ce3, type: 2}
+    weight: 1
+  icon: {fileID: 2387689371023638192, guid: 4339910a5a0d213498aef62ec8a187a0, type: 3}

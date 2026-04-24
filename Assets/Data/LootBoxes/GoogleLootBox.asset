@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
+  m_Name: GoogleLootBox
+  m_EditorClassIdentifier: 
+  lootBoxData:
+  - item: {fileID: 11400000, guid: a8bc8ddc7d958d5449ebef0e62debc5c, type: 2}
+    weight: 6000
+  - item: {fileID: 11400000, guid: c17f7e71ead0b82468e3eef10984b8dc, type: 2}
+    weight: 1700
+  - item: {fileID: 11400000, guid: dc4aacbd0ca10714593c053f07edb022, type: 2}
+    weight: 700
+  - item: {fileID: 11400000, guid: 60ba12a2419c50442985b3edcd18afe9, type: 2}
+    weight: 700
+  - item: {fileID: 11400000, guid: 3dc31b4ae7f959e4883c0c3cf78439de, type: 2}
+    weight: 300
+  - item: {fileID: 11400000, guid: 67a380b6020747f4ca219e49ea4c0001, type: 2}
+    weight: 300
+  - item: {fileID: 11400000, guid: 34c8b007924d7384196a45922723c901, type: 2}
+    weight: 150
+  - item: {fileID: 11400000, guid: 055fd25cb66b33545a82928ec157dac8, type: 2}
+    weight: 100
+  - item: {fileID: 11400000, guid: ab578bdf67d468741a4405be5bcb949d, type: 2}
+    weight: 50
+  icon: {fileID: -5536110431666241071, guid: a1ddc4a507b14d44eb53042435853d2d, type: 3}

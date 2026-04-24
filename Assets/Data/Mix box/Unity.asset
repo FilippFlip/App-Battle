@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
+  m_Name: Unity
+  m_EditorClassIdentifier: 
+  appName: Unity
+  price: 3325
+  icon: {fileID: -6550576152358289201, guid: 66319bdcdaddafa49b739fd97ad86e2e, type: 3}
