@@ -42,7 +42,7 @@ public class SlotMachine : MonoBehaviour
             {
                 stopped = true;
                 var winner =GetCenterSlot();
-                profile.wonApps.Add(Instantiate(winner.appData));
+                profile.wonApps.Add(winner.appData);
                 
             }
             return;
