@@ -1,3 +1,4 @@
+using System.CodeDom.Compiler;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,10 @@ public class LootBoxSwap : MonoBehaviour
     public Transform profileSpace;
     public AppSlot slotPrefab;
     private float totalweight;
-
+    private int slotMachineNumber;
+    public GameObject boxInfo;
+    public GameObject slotPanel;
+    public GameObject slotMachinePrefab;
     public void SetLootBoxData(LootBoxData data)
     {
         casesPanel.SetActive(false);    
@@ -45,8 +49,20 @@ public class LootBoxSwap : MonoBehaviour
         slot.chance.text = (chance.weight / totalweight * 100).ToString()+"%";
 
     }
-    public void GenerateSlotMachines (int amount)
+    public void SelectMachinesNumber (int amount)
     {
+        slotMachineNumber = amount;
 
     }
+    public void GenerateLootBoxes()
+    {
+        boxInfo.SetActive(false);
+        slotPanel.SetActive(true);
+        for (int i = 0; i < slotMachineNumber; i++)
+        {
+            Instantiate(slotMachinePrefab, slotPanel.transform);
+            
+        }
+    }
+
 }
