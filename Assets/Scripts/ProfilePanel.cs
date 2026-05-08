@@ -21,7 +21,7 @@ public class ProfilePanel : MonoBehaviour
             AppSlot slot = Instantiate(slotPrefab, itemsParent);
             slot.icon.sprite = app.icon;
             slot.appData = app;
-
+            slot.price.text=app.price.ToString();
         }
 
         crystalsText.text = profile.crystals.ToString();

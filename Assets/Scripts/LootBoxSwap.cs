@@ -45,4 +45,8 @@ public class LootBoxSwap : MonoBehaviour
         slot.chance.text = (chance.weight / totalweight * 100).ToString()+"%";
 
     }
+    public void GenerateSlotMachines (int amount)
+    {
+
+    }
 }

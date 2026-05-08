@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 2992516809897655001}
   - component: {fileID: 1768438354476617031}
   m_Layer: 5
-  m_Name: SlotMachine
+  m_Name: AppSLot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

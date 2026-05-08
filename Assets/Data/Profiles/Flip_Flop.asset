@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Flip_Flop
   m_EditorClassIdentifier: 
   crystals: 0
-  playerName: 
+  playerName: Flip_Flop
   wonApps: []
