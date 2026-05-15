@@ -18,6 +18,13 @@ public class LootBoxSwap : MonoBehaviour
     public GameObject boxInfo;
     public GameObject slotPanel;
     public GameObject slotMachinePrefab;
+
+    public GameObject blocker;
+    public GameObject arrowBack;
+    private void Start()
+    {
+        blocker.SetActive(false);
+    }
     public void SetLootBoxData(LootBoxData data)
     {
         casesPanel.SetActive(false);    
@@ -56,6 +63,9 @@ public class LootBoxSwap : MonoBehaviour
     }
     public void GenerateLootBoxes()
     {
+        blocker.SetActive(true);
+        arrowBack.SetActive(false);
+
         boxInfo.SetActive(false);
         slotPanel.SetActive(true);
         for (int i = 0; i < slotMachineNumber; i++)
