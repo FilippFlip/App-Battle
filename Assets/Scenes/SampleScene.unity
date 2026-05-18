@@ -1885,7 +1885,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 3.8475459}
+  m_AnchoredPosition: {x: 13.152725, y: 3.8475459}
   m_SizeDelta: {x: 224.42639, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &294235264
@@ -10890,7 +10890,8 @@ MonoBehaviour:
   slotPanel: {fileID: 247849823}
   slotMachinePrefab: {fileID: 3303900429684203806, guid: 3abb52843004e1349a9ef2c416353f93, type: 3}
   blocker: {fileID: 725919629}
-  arrowBack: {fileID: 0}
+  arrowBack: {fileID: 2041069923}
+  slotMachines: []
 --- !u!4 &1269166120
 Transform:
   m_ObjectHideFlags: 0

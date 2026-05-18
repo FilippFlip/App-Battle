@@ -1,5 +1,7 @@
+using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -21,9 +23,10 @@ public class SlotMachine : MonoBehaviour
     public AudioSource audio;
     private bool stopped;
     public PlayerProfile profile;
+    public event Action OnComplete;
     void Start()
     {
-        baseTime += Random.Range(-offsetTime, offsetTime);
+        baseTime += UnityEngine.Random.Range(-offsetTime, offsetTime);
 
         for(int i = 0; i < lootBoxData.lootBoxData.Length; i++)
         {
@@ -43,10 +46,12 @@ public class SlotMachine : MonoBehaviour
                 stopped = true;
                 var winner =GetCenterSlot();
                 profile.wonApps.Add(winner.appData);
-                
+                OnComplete?. Invoke();
+
             }
             return;
         }
+
         float value = movingCurve.Evaluate(timer2 / baseTime);
 
         for (int i = createdApps.Count-1;i >=0 ;i-- )
@@ -64,7 +69,7 @@ public class SlotMachine : MonoBehaviour
         timer2 += Time.deltaTime;
         if (timer>spawnRate/value)
         {
-            float random = Random.Range(0,totalWeight) ;
+            float random = UnityEngine.Random.Range(0,totalWeight) ;
             AppData data = null;
             foreach(var kv in appChance)
             {

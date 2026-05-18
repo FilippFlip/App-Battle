@@ -1,4 +1,5 @@
 using System.CodeDom.Compiler;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,6 +22,9 @@ public class LootBoxSwap : MonoBehaviour
 
     public GameObject blocker;
     public GameObject arrowBack;
+
+    public List<SlotMachine> slotMachines=new List<SlotMachine>();
+    private int currentStopped;
     private void Start()
     {
         blocker.SetActive(false);
@@ -70,9 +74,32 @@ public class LootBoxSwap : MonoBehaviour
         slotPanel.SetActive(true);
         for (int i = 0; i < slotMachineNumber; i++)
         {
-            Instantiate(slotMachinePrefab, slotPanel.transform);
+            SlotMachine obj = Instantiate 
+                (slotMachinePrefab, slotPanel.transform).GetComponent<SlotMachine>();
+            slotMachines.Add(obj);
+            obj.OnComplete += SlotMachinesStop;
+        }
+        
+    }
+    private void SlotMachinesStop()
+    {
+        currentStopped++;
+        if (currentStopped<slotMachineNumber)
+        {
             
+            return;
+        }
+        for (int i=slotMachines.Count-1; i>=0;i--)
+        {
+            SlotMachine obj = slotMachines[i];
+            obj.OnComplete -= SlotMachinesStop;
+            slotMachines.Remove(obj);
+            Destroy(obj.gameObject);
+            
+
         }
     }
-
+      
+        
+        
 }
