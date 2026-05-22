@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-fortnite-100 (1)_0: 8892403904446603441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

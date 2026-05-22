@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-spotify-100_0: -4519206060101249643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

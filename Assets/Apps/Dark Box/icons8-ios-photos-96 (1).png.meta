@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-ios-photos-96 (1)_0: 196490366066396561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

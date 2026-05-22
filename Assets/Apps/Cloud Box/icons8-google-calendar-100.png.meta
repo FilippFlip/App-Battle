@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-google-calendar-100_0: -8330475432211764138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

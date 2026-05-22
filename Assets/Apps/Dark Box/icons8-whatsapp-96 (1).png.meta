@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-whatsapp-96 (1)_0: -4263595082374989891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

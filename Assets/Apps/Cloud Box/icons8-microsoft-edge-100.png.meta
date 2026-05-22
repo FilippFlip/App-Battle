@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-microsoft-edge-100_0: -1328170581382523242
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

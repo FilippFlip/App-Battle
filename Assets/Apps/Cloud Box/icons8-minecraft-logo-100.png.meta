@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-minecraft-logo-100_0: -8579189201922421400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

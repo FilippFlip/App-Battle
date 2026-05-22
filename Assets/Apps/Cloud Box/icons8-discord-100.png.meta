@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-discord-100_0: 207773264718897705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

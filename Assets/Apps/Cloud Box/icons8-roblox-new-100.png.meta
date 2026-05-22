@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-roblox-new-100_0: 2218042853846889787
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
