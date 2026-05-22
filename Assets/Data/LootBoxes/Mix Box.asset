@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
-  m_Name: MixLootBox
+  m_Name: Mix Box
   m_EditorClassIdentifier: 
   lootBoxData:
   - item: {fileID: 11400000, guid: ad8d916ff2df48c48bbdfce45c05acb5, type: 2}

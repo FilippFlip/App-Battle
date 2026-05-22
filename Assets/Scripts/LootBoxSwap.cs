@@ -67,6 +67,10 @@ public class LootBoxSwap : MonoBehaviour
     }
     public void GenerateLootBoxes()
     {
+        if (slotMachineNumber <= 0)
+        {
+            return;
+        }
         blocker.SetActive(true);
         arrowBack.SetActive(false);
 
@@ -86,7 +90,6 @@ public class LootBoxSwap : MonoBehaviour
         currentStopped++;
         if (currentStopped<slotMachineNumber)
         {
-            
             return;
         }
         for (int i=slotMachines.Count-1; i>=0;i--)
@@ -98,8 +101,13 @@ public class LootBoxSwap : MonoBehaviour
             
 
         }
+        blocker.SetActive(false);
+        arrowBack.SetActive(true);
+
+        boxInfo.SetActive(true);
+        slotPanel.SetActive(false);
+        slotMachineNumber = 0;
+        currentStopped = 0;
     }
       
-        
-        
 }

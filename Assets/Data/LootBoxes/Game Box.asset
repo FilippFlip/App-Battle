@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
-  m_Name: GameLootBox
+  m_Name: Game Box
   m_EditorClassIdentifier: 
   lootBoxData:
   - item: {fileID: 11400000, guid: 05f7a6005880ac6458cca1663ed10b33, type: 2}

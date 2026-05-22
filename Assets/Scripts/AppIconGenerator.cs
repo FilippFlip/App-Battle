@@ -5,12 +5,7 @@ public class AppIconGenerator : MonoBehaviour
     public Transform profileSpace;
     public AppSlot slotPrefab;
     public AppData[] appDatas;
-    
-    void Start()
-    {
-            GenerateIcon(appDatas[Random.Range(0, 5)], profileSpace);
-    }
-
+ 
     void Update()
     {
         
