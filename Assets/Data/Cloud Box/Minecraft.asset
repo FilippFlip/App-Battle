@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7939c40dada5b774c99711bc3ab62257, type: 3}
-  m_Name: EvaluatorData
+  m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
+  m_Name: Minecraft
   m_EditorClassIdentifier: 
-  numbers: 010000000200000002000000
-  lastResult: 
+  price: 1227250
+  icon: {fileID: -8579189201922421400, guid: b77070e1285b71d4ea4b2c9d199db056, type: 3}

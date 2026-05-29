@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Youtube
   m_EditorClassIdentifier: 
   price: 112050
-  icon: {fileID: 0}
+  icon: {fileID: -6060336407155312134, guid: 4ab2ef9301dac2349a708dffaca831c2, type: 3}

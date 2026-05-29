@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
-  m_Name: Google Store
+  m_Script: {fileID: 11500000, guid: 021556a8af4d53d4f9d83f162ba00059, type: 3}
+  m_Name: Flip_Flop
   m_EditorClassIdentifier: 
-  price: 1725
-  icon: {fileID: 8909124935622700447, guid: 72c38f942ec96fc4abff0e3bb41b0516, type: 3}
+  crystals: 15
+  playerName: Flip_Flop
+  wonApps: []

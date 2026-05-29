@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ee963de2ab764234faec0a24ad411368
+guid: 359ba151c162c1c4a8204905d7f4bed9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6371794936609276684
-    second: icons8-finance-document-96_0
+      213: 6012462313377961571
+    second: icons8-stumble-guys-96 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icons8-finance-document-96_0
+      name: icons8-stumble-guys-96 (1)_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 79
-        height: 88
+        x: 0
+        y: 15
+        width: 96
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fc75cda346d297a0800000000000000
-      internalID: -6371794936609276684
+      spriteID: 366115e5e9e807350800000000000000
+      internalID: 6012462313377961571
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      icons8-finance-document-96_0: -6371794936609276684
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

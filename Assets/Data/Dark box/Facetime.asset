@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Facetime
   m_EditorClassIdentifier: 
   price: 3925
-  icon: {fileID: 0}
+  icon: {fileID: 8859074261446599110, guid: 41b0a6f00af1e60488c0c26d49775ed4, type: 3}

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Whats Up
   m_EditorClassIdentifier: 
   price: 11775
-  icon: {fileID: 0}
+  icon: {fileID: -4263595082374989891, guid: a97b9dd2993533841bbb62fda3523eb5, type: 3}

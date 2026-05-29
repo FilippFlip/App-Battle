@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Music
   m_EditorClassIdentifier: 
   price: 22625
-  icon: {fileID: 0}
+  icon: {fileID: 859880483378528895, guid: 884bf62c3d2e91f4a80eec9bf8804f13, type: 3}

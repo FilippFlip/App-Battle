@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
+  m_Name: Cloud Box
+  m_EditorClassIdentifier: 
+  lootBoxData:
+  - item: {fileID: 11400000, guid: 8bc21bc76f55a1b4eaaf7cb7898b0fc7, type: 2}
+    weight: 3810
+  - item: {fileID: 11400000, guid: 83586f235ba2bf742a100e7a7536d174, type: 2}
+    weight: 2500
+  - item: {fileID: 11400000, guid: 7857256a2a6cdd34a844b09438202cdd, type: 2}
+    weight: 1500
+  - item: {fileID: 11400000, guid: 1fa2b06b49e7845409797e581d817cbf, type: 2}
+    weight: 1000
+  - item: {fileID: 11400000, guid: 76a6adc94409af54fab89c204a4b6616, type: 2}
+    weight: 500
+  - item: {fileID: 11400000, guid: 13b891593d3b4844e81599ad2d7c3e38, type: 2}
+    weight: 400
+  - item: {fileID: 11400000, guid: 3239b7ac07de85141ba5ba54dfb364a3, type: 2}
+    weight: 200
+  - item: {fileID: 11400000, guid: ced5bb2990adc13409ae34546329219e, type: 2}
+    weight: 60
+  - item: {fileID: 11400000, guid: d7b6503ceab4a284c8da60a47e5a5462, type: 2}
+    weight: 30
+  icon: {fileID: -7675353782578254922, guid: 4d164756f97ba724daf572228b7a7699, type: 3}
+  price: 37999

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
-  m_Name: Google Store
+  m_Name: Spotify
   m_EditorClassIdentifier: 
-  price: 1725
-  icon: {fileID: 8909124935622700447, guid: 72c38f942ec96fc4abff0e3bb41b0516, type: 3}
+  price: 23250
+  icon: {fileID: -4519206060101249643, guid: 91f6e2464e7e0184082f67c7e2337a08, type: 3}

@@ -7,6 +7,7 @@ public class LootBoxData : ScriptableObject
 {
     public ItemChance[] lootBoxData;
     public Sprite icon;
+    public int price;
 }
 [Serializable]
 public class ItemChance

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
-  m_Name: Google Store
+  m_Name: Stumble Guys
   m_EditorClassIdentifier: 
-  price: 1725
-  icon: {fileID: 8909124935622700447, guid: 72c38f942ec96fc4abff0e3bb41b0516, type: 3}
+  price: 100
+  icon: {fileID: 6012462313377961571, guid: 359ba151c162c1c4a8204905d7f4bed9, type: 3}

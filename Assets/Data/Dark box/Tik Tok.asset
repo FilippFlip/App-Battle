@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tik Tok
   m_EditorClassIdentifier: 
   price: 7975
-  icon: {fileID: 0}
+  icon: {fileID: -4845344822598851054, guid: beac783e3a69e244bbc505a12c63ecbc, type: 3}

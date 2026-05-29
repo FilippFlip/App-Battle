@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Instagram
   m_EditorClassIdentifier: 
   price: 74075
-  icon: {fileID: 0}
+  icon: {fileID: 1398241710693166825, guid: 308478fbce03ecb48a959077196d0dc3, type: 3}

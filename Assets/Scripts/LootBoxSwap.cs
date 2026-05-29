@@ -23,6 +23,8 @@ public class LootBoxSwap : MonoBehaviour
     public GameObject blocker;
     public GameObject arrowBack;
 
+    public PlayerProfile profile;
+    public Button openLootBoxButton;
     public List<SlotMachine> slotMachines=new List<SlotMachine>();
     private int currentStopped;
     private void Start()
@@ -67,10 +69,12 @@ public class LootBoxSwap : MonoBehaviour
     }
     public void GenerateLootBoxes()
     {
+
         if (slotMachineNumber <= 0)
         {
             return;
         }
+        profile.crystals -= slotMachineNumber * lootBoxData.price;
         blocker.SetActive(true);
         arrowBack.SetActive(false);
 
@@ -78,8 +82,10 @@ public class LootBoxSwap : MonoBehaviour
         slotPanel.SetActive(true);
         for (int i = 0; i < slotMachineNumber; i++)
         {
-            SlotMachine obj = Instantiate 
-                (slotMachinePrefab, slotPanel.transform).GetComponent<SlotMachine>();
+            SlotMachine obj//here we instantiate this object
+                           = Instantiate 
+                (slotMachinePrefab, slotPanel.transform).GetComponent<SlotMachine>();//created copy
+            obj.lootBoxData = lootBoxData;
             slotMachines.Add(obj);
             obj.OnComplete += SlotMachinesStop;
         }
@@ -109,5 +115,22 @@ public class LootBoxSwap : MonoBehaviour
         slotMachineNumber = 0;
         currentStopped = 0;
     }
-      
+    private void Update()
+    {
+        if (slotMachineNumber == 0)
+        {
+            return;
+        }
+        if (lootBoxData.price*slotMachineNumber>profile.crystals)
+        {
+            openLootBoxButton.interactable = false;
+
+        }
+        else
+        {
+            openLootBoxButton.interactable = true;
+            
+        }
+        
+    }
 }

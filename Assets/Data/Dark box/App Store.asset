@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: App Store
   m_EditorClassIdentifier: 
   price: 5825
-  icon: {fileID: 0}
+  icon: {fileID: -1285679200140818564, guid: 3b2da105df7bfb1439f1af69c38231d8, type: 3}

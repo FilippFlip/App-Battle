@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Photos
   m_EditorClassIdentifier: 
   price: 4600
-  icon: {fileID: 0}
+  icon: {fileID: 196490366066396561, guid: efb498a210767ef44a96a0e9d2207885, type: 3}

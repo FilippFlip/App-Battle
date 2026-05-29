@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Gmail
   m_EditorClassIdentifier: 
   price: 3125
-  icon: {fileID: 0}
+  icon: {fileID: 8700532579642270771, guid: c47cfc4bfbc3e9442819d5a4460f2101, type: 3}
