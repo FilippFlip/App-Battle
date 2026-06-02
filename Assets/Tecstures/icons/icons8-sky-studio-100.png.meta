@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-sky-studio-100_0: -7675353782578254922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

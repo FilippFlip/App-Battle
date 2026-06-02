@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-scary-tree-100_0: -4742444751766047324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

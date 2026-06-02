@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-stumble-guys-96 (1)_0: 6012462313377961571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
