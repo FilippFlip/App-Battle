@@ -22,7 +22,7 @@ public class LootBoxSwap : MonoBehaviour
 
     public GameObject blocker;
     public GameObject arrowBack;
-
+    public ProfilePanel profilePanel;
     public PlayerProfile profile;
     public Button openLootBoxButton;
     public List<SlotMachine> slotMachines=new List<SlotMachine>();
@@ -74,7 +74,7 @@ public class LootBoxSwap : MonoBehaviour
         {
             return;
         }
-        profile.crystals -= slotMachineNumber * lootBoxData.price;
+        profilePanel.Crystals -= slotMachineNumber * lootBoxData.price;
         blocker.SetActive(true);
         arrowBack.SetActive(false);
 
