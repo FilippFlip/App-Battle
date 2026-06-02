@@ -8,20 +8,19 @@ public class ProfilePanel : MonoBehaviour
     public Transform itemsParent;
     public TMP_Text netWorth;
     public TMP_Text crystals;
-
     public float Crystals
     {
         set
         {
             profile.crystals = value;
             crystals.text = profile.crystals.ToString();
+
         }
-        get
+        get 
         {
             return profile.crystals;
         }
     }
-
     private void Awake()
     {
         netWorth.text = profile.crystals.ToString();
@@ -45,13 +44,13 @@ public class ProfilePanel : MonoBehaviour
         }
 
         netWorth.text = profile.crystals.ToString();
-        
     }
     public void SellAll()
     {
         foreach(AppData app in profile.wonApps)
         {
             Crystals += app.price;
+
         }
         
         for(int i = profile.wonApps.Count - 1; i >= 0; i--)
