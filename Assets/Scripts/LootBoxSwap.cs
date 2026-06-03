@@ -36,6 +36,7 @@ public class LootBoxSwap : MonoBehaviour
     }
     public void SelectMachinesNumber (int amount)
     {
+        lootBoxView.ChangeLootBoxPrice (amount);
         slotMachineNumber = amount;
 
     }

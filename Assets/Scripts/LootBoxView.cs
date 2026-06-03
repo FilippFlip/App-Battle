@@ -8,12 +8,14 @@ public class LootBoxView : MonoBehaviour
     public TMP_Text lootBoxName;
     public Transform profileSpace;
     public AppSlot slotPrefab;
-
+    public TMP_Text priceText;
+    private LootBoxData _data;
     public void Show(LootBoxData data)
     {
+        _data = data;
         lootBoxIcon.sprite = data.icon;
         lootBoxName.text = data.name;
-
+        priceText.text=data.price.ToString();
         ClearGrid();
 
         float totalWeight = 0;
@@ -42,5 +44,9 @@ public class LootBoxView : MonoBehaviour
         slot.icon.sprite = chance.item.icon;
         slot.price.text = chance.item.price.ToString();
         slot.chance.text = (chance.weight / totalWeight * 100).ToString() + "%";
+    }
+    public void ChangeLootBoxPrice(int multi)
+    {
+        priceText.text=(_data.price*multi).ToString();
     }
 }
