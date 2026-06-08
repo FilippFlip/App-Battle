@@ -20,6 +20,23 @@ public class ProfilePanel : MonoBehaviour
         {
             return profile.crystals;
         }
+
+    }
+    public float NetWorth
+    {
+        get
+        {
+            float netWorth = 0;
+
+            foreach (AppData app in profile.wonApps)
+            {
+                netWorth += app.price;
+            }
+            netWorth += profile.crystals;
+
+            return netWorth;
+        }
+        
     }
     private void Awake()
     {
@@ -43,7 +60,7 @@ public class ProfilePanel : MonoBehaviour
             slot.price.text = app.price.ToString();
         }
 
-        netWorth.text = profile.crystals.ToString();
+        netWorth.text = NetWorth.ToString();
     }
     public void SellAll()
     {

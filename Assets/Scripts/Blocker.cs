@@ -1,11 +1,16 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Blocker : MonoBehaviour, IPointerClickHandler
+public class Blocker : MonoBehaviour, IPointerClickHandler, IScrollHandler
 {
     public GameObject warningPanel;
-
+    public ScrollRect content;
+    private void Awake()
+    {
+        gameObject.SetActive(false);
+    }
     public async void OnPointerClick(PointerEventData eventData)
     {
         if (warningPanel.activeSelf)
@@ -15,5 +20,10 @@ public class Blocker : MonoBehaviour, IPointerClickHandler
         warningPanel.SetActive(true);
         await Awaitable.WaitForSecondsAsync(1.5f);
         warningPanel.SetActive(false);
+    }
+
+    public void OnScroll(PointerEventData eventData)
+    {
+        content.OnScroll(eventData);
     }
 }
