@@ -20,10 +20,10 @@ public class SlotMachine : MonoBehaviour
     public float baseTime;
     public float offsetTime;
     public AnimationCurve movingCurve;
-    public AudioSource audio;
     private bool stopped;
     public PlayerProfile profile;
     public event Action OnComplete;
+    public event Action OnAppCreated;
     void Start()
     {
         baseTime += UnityEngine.Random.Range(-offsetTime, offsetTime);
@@ -89,7 +89,7 @@ public class SlotMachine : MonoBehaviour
     public void GenerateIcon(AppData data, Transform parent)
     {
         AppSlot slot = Instantiate(slotPrefab, parent);
-        audio.PlayOneShot(audio.clip);
+        OnAppCreated?.Invoke();
         slot.icon.sprite = data.icon;
         slot.appData= data;
         slot.transform.localPosition = new Vector3(0, 300, 0);
@@ -111,5 +111,6 @@ public class SlotMachine : MonoBehaviour
         }
         return closest;
     }
+
 }
 
