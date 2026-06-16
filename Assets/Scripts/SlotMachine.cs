@@ -45,7 +45,7 @@ public class SlotMachine : MonoBehaviour
             {
                 stopped = true;
                 var winner =GetCenterSlot();
-                profile.wonApps.Add(winner.appData);
+                profile.AddItem(winner.appData);
                 OnComplete?. Invoke();
 
             }

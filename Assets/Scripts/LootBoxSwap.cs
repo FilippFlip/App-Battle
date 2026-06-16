@@ -26,6 +26,10 @@ public class LootBoxSwap : MonoBehaviour
     {
         blocker.SetActive(false);
     }
+    private void OnDisable()
+    {
+        slotMachineNumber = 0;
+    }
     public void SetLootBoxData(LootBoxData data)
     {
         casesPanel.SetActive(false);
@@ -85,7 +89,7 @@ public class LootBoxSwap : MonoBehaviour
 
         boxInfo.SetActive(true);
         slotPanel.SetActive(false);
-        slotMachineNumber = 0;
+        
         currentStopped = 0;
     }
     private void Update()

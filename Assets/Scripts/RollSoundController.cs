@@ -7,9 +7,9 @@ public class RollSoundController : MonoBehaviour
     private SlotMachine machine;
 
     private async void OnEnable()
-    {
-        machine=GetComponentInChildren<SlotMachine>();
-        await Awaitable.WaitForSecondsAsync(1);
+    {  
+        await Awaitable.NextFrameAsync();
+        machine = GetComponentInChildren<SlotMachine>();
         machine.OnAppCreated += Tick;
 
     }

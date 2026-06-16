@@ -1,25 +1,25 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class ButtonSelectManager : MonoBehaviour, ISelectHandler, IDeselectHandler
+public class ButtonSelectManager : MonoBehaviour
 {
     [SerializeField] private GameObject highlight;
+    private Button btn;
+    public event Action <ButtonSelectManager> OnSelect;
 
     private void Awake()
     {
-        if (highlight != null)
-            highlight.SetActive(false);
+        highlight.SetActive(false);
+        btn = GetComponent<Button>();
+        btn.onClick.AddListener(() => OnSelect?.Invoke(this));
+    }
+    public void SetHighlight(bool active)
+    {
+        highlight.SetActive (active);
+
     }
 
-    public void OnSelect(BaseEventData eventData)
-    {
-        if (highlight != null)
-            highlight.SetActive(true);
-    }
-
-    public void OnDeselect(BaseEventData eventData)
-    {
-        if (highlight != null)
-            highlight.SetActive(false);
-    }
+ 
 }
