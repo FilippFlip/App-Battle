@@ -113,7 +113,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -719.22754, y: 135.15579}
-  m_SizeDelta: {x: 400, y: 450}
+  m_SizeDelta: {x: 300, y: 337.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1910848281076154044
 CanvasRenderer:
@@ -176,7 +176,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  audio: {fileID: 0}
   profile: {fileID: 11400000, guid: 6e1a67bf179b1b14983b13f51f4e0799, type: 2}
 --- !u!1 &4248284740674916379
 GameObject:

@@ -11,7 +11,7 @@ public class LootBoxSwap : MonoBehaviour
     public GameObject lootBoxMenu;
     private int slotMachineNumber;
     public GameObject boxInfo;
-    public GameObject slotPanel;
+    public SlotMachineContainer slotPanel;
     public GameObject slotMachinePrefab;
 
     public GameObject blocker;
