@@ -21,7 +21,8 @@ public class RollSoundController : MonoBehaviour
 
     private void OnDisable()
     {
-        machine.OnAppCreated -= Tick;
+        if (machine != null)
+            machine.OnAppCreated -= Tick;
 
     }
     private void Tick()

@@ -30,17 +30,14 @@ public class SlotMachineContainer : MonoBehaviour
     {
         float timer=0;
         var rect=GetComponent<RectTransform>();
-        while (timer>=1)
+        rect.localScale = Vector3.zero;
+        while (timer<=1)
         {
             timer += Time.deltaTime;
-          
+
             await Awaitable.NextFrameAsync();
-            rect.transform.localScale = Vector3.one * timer;
+            rect.localScale = Vector3.one * timer;
         }
-        rect.transform.localScale = Vector3.one;
-    }
-    void Update()
-    {
-        
+        rect.localScale = Vector3.one;
     }
 }

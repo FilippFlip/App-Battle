@@ -17,7 +17,7 @@ public class PlayerProfile : ScriptableObject
     }
     public void RemoveItem(AppData item)
     {
-        OnItemRemoved?.Invoke(item);
-        wonApps.Remove(item);
+        if (wonApps.Remove(item))
+            OnItemRemoved?.Invoke(item);
     }
 }

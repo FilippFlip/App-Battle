@@ -105,5 +105,6 @@ public class ProfilePanel : MonoBehaviour
     private void RemoveItem(AppData item)
     {
         Crystals += item.price;
+        Show();
     }
 }
