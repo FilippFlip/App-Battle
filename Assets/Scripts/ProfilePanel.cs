@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProfilePanel : MonoBehaviour
 {
@@ -9,7 +10,11 @@ public class ProfilePanel : MonoBehaviour
     public TMP_Text netWorth;
     public TMP_Text crystals;
     public TMP_Text buttonText;
-
+    public TMP_Text openBoxesText;
+    public TMP_Text upgradesMadeText;
+    public TMP_Text bestDropName;
+    public TMP_Text bestDropPrice;
+    public Image bestDropIcon;
     public float Crystals
     {
         set
@@ -67,6 +72,11 @@ public class ProfilePanel : MonoBehaviour
             slot.price.text = app.price.ToString();
         }
         netWorth.text = NetWorth.ToString();
+        openBoxesText.text="Cases Opened:"+ profile.casesOpened.ToString();
+        upgradesMadeText.text="Upgrades Made"+profile.upgradesMade.ToString();
+        bestDropName.text = profile.bestDrop.name;
+        bestDropPrice.text = profile.bestDrop.price.ToString();
+        bestDropIcon.sprite = profile.bestDrop.icon;
         UpdateSellButtonText(); 
     }
 

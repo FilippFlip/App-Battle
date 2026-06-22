@@ -52,6 +52,7 @@ public class LootBoxSwap : MonoBehaviour
             return;
         }
         profilePanel.Crystals -= slotMachineNumber * lootBoxData.price;
+        profile.casesOpened += slotMachineNumber;
         blocker.SetActive(true);
         arrowBack.SetActive(false);
 

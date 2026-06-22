@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
-  m_Name: Microsoft Edge
+  m_Name: Notes
   m_EditorClassIdentifier: 
-  appName: Microsoft Edge
-  price: 8625
-  icon: {fileID: 1707097373639169373, guid: 20e31947d14edef44b4baa4bb6f5fa28, type: 3}
+  price: 6985225
+  icon: {fileID: -959296390789751802, guid: 3fc3d7b5b9898394e9814d0a6e319936, type: 3}

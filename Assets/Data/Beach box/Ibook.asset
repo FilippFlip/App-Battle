@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
-  m_Name: Settings Apple
+  m_Name: Ibook
   m_EditorClassIdentifier: 
-  appName: Settings Apple
-  price: 450
-  icon: {fileID: 5776308240066610640, guid: 24e0387bf73c75740b06ae686fd6c8bc, type: 3}
+  price: 3625000
+  icon: {fileID: -7837028256596973363, guid: a8ce870b59778114eba1eb80880ac4db, type: 3}
