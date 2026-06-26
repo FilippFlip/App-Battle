@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-amazon-appstore-96_0: -4288017380882170326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

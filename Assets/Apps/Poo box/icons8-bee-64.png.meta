@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-bee-64_0: 8994397632279500744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

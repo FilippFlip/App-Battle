@@ -176,6 +176,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  alignSpeed: 100
+  endPause: 1
   profile: {fileID: 11400000, guid: 6e1a67bf179b1b14983b13f51f4e0799, type: 2}
 --- !u!1 &4248284740674916379
 GameObject:

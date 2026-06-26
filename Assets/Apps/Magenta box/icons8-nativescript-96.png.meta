@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-nativescript-96_0: -1078671008970204636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

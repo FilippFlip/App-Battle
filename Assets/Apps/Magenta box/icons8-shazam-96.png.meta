@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-shazam-96_0: -8896395008773211816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

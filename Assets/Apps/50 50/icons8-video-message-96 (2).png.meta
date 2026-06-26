@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-video-message-96 (2)_0: 541363262306959495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-microsoft-outlook-100_0: 3407986179127752698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

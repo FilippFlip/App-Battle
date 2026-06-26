@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-google-photos-100_0: 8859093916247024532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

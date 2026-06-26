@@ -7,10 +7,6 @@ public class Blocker : MonoBehaviour, IPointerClickHandler, IScrollHandler
 {
     public GameObject warningPanel;
     public ScrollRect content;
-    private void Awake()
-    {
-        gameObject.SetActive(false);
-    }
     public async void OnPointerClick(PointerEventData eventData)
     {
         if (warningPanel.activeSelf)

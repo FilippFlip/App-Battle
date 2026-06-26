@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-blackberry-96_0: -3509475459020782289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

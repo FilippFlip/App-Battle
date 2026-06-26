@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-contacts-64_0: -8259759189003435904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

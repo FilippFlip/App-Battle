@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-amazon-prime-video-96_0: -6662472888178123629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

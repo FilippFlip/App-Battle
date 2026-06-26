@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-rave-logo-100_0: -769524703407660666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

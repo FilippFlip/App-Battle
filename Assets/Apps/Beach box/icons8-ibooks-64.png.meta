@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-ibooks-64_0: -7837028256596973363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

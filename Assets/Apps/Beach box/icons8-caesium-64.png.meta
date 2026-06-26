@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-caesium-64_0: 4124475646183449801
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

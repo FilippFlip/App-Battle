@@ -20,7 +20,11 @@ public class SlotMachine : MonoBehaviour
     public float baseTime;
     public float offsetTime;
     public AnimationCurve movingCurve;
+    public float alignSpeed = 500f;
+    public float endPause = 1f;
     private bool stopped;
+    private bool completed;
+    private AppSlot winner;
     public PlayerProfile profile;
     public event Action OnComplete;
     public event Action OnAppCreated;
@@ -44,11 +48,9 @@ public class SlotMachine : MonoBehaviour
             if (!stopped)
             {
                 stopped = true;
-                var winner =GetCenterSlot();
-                profile.AddItem(winner.appData);
-                OnComplete?. Invoke();
-
+                winner = GetCenterSlot();
             }
+            AlignToWinner();
             return;
         }
 
@@ -95,6 +97,53 @@ public class SlotMachine : MonoBehaviour
         slot.transform.localPosition = new Vector3(0, 300, 0);
         createdApps.Add(slot);
     }
+    private void AlignToWinner()
+    {
+        if (completed)
+        {
+            return;
+        }
+        if (winner == null)
+        {
+            Finish();
+            return;
+        }
+
+        float y = winner.transform.localPosition.y;
+        float step = alignSpeed * Time.deltaTime;
+
+        // Дошли до цели в пределах одного шага — ставим победителя ровно на 0 и завершаем.
+        if (Mathf.Abs(y) <= step)
+        {
+            MoveAllSlots(-y);
+            Finish();
+            return;
+        }
+
+        // Двигаем все слоты к нулю: y>0 — вниз, y<0 — вверх.
+        MoveAllSlots(-Mathf.Sign(y) * step);
+    }
+
+    private void MoveAllSlots(float deltaY)
+    {
+        for (int i = 0; i < createdApps.Count; i++)
+        {
+            createdApps[i].transform.localPosition += Vector3.up * deltaY;
+        }
+    }
+
+    private async void Finish()
+    {
+        completed = true;
+        if (winner != null)
+        {
+            profile.AddItem(winner.appData);
+        }
+        // Небольшая пауза, чтобы игрок успел увидеть победителя по центру.
+        await Awaitable.WaitForSecondsAsync(endPause);
+        OnComplete?.Invoke();
+    }
+
     public AppSlot GetCenterSlot()
     {
         AppSlot closest = null;
