@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abb22c2cf88751f4d94a3bae67184321, type: 3}
-  m_Name: Spotify Light
+  m_Name: Spotify L
   m_EditorClassIdentifier: 
   price: 128
   icon: {fileID: -938448407066785554, guid: 6ff52b8180d85bb44a0cd0345775fd85, type: 3}

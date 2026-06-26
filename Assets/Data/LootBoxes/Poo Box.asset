@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
+  m_Name: Poo Box
+  m_EditorClassIdentifier: 
+  lootBoxData:
+  - item: {fileID: 11400000, guid: 955ecb7b0124b984dbb7e980b08165fe, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: 22145d4e9c4511b4db87b7b910a8825e, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: f25f463a71c09de46b22746307527556, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: 4e65091bea600674786c991a4359551e, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: a197327e067bb6f49b68a5865e037cb5, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: f6affb5e37a189c4fb885b18a2dfa6fb, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: 65adca9ea5af7994a98869175570296f, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: b96b091016594d84697e19891b06a210, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: 8f54612da72189e469b6c12f3b75bb09, type: 2}
+    weight: 1110
+  - item: {fileID: 11400000, guid: 9a874097910751d4992cae81b35df9a6, type: 2}
+    weight: 10
+  icon: {fileID: 0}
+  price: 1200

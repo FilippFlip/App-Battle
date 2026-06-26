@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
+  m_Name: Magenta Box
+  m_EditorClassIdentifier: 
+  lootBoxData:
+  - item: {fileID: 11400000, guid: 9865162ef0e328140b208b6626b16d7f, type: 2}
+    weight: 2800
+  - item: {fileID: 11400000, guid: d0aeb1d585c75cc4db1762b97d8e5409, type: 2}
+    weight: 2100
+  - item: {fileID: 11400000, guid: d8ff7287c6055fa4691bf28c22fdc74d, type: 2}
+    weight: 1385
+  - item: {fileID: 11400000, guid: 4a554883ee65a834cb5a5143497869e3, type: 2}
+    weight: 1363
+  - item: {fileID: 11400000, guid: 4baf5f9bf4158b34f96fc832863ec559, type: 2}
+    weight: 1200
+  - item: {fileID: 11400000, guid: d265634904e5a1942a84493649ffb02d, type: 2}
+    weight: 1150
+  - item: {fileID: 11400000, guid: f5a481ad1b72a0849b601cc56658a269, type: 2}
+    weight: 2
+  icon: {fileID: 0}
+  price: 10000000

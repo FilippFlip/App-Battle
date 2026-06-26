@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e455f46b802b247bbaf40cffbb2875, type: 3}
+  m_Name: Beach Box
+  m_EditorClassIdentifier: 
+  lootBoxData:
+  - item: {fileID: 11400000, guid: fe93f28c662c3864d85adf89118593fd, type: 2}
+    weight: 2500
+  - item: {fileID: 11400000, guid: 268f11e6c94b02141946004de637e134, type: 2}
+    weight: 2200
+  - item: {fileID: 11400000, guid: bde962be4e570d94c9b1a7914607e8b2, type: 2}
+    weight: 1200
+  - item: {fileID: 11400000, guid: e5dc63fab30e52147910e0484558b014, type: 2}
+    weight: 1200
+  - item: {fileID: 11400000, guid: 862e9e1041ab863479bc06e2cd8c3ec9, type: 2}
+    weight: 1000
+  - item: {fileID: 11400000, guid: e7bdc2b672c212d46bbbe0a2dbaafc07, type: 2}
+    weight: 800
+  - item: {fileID: 11400000, guid: 215bb5450a1c0c84685fbfd99238b6ab, type: 2}
+    weight: 600
+  - item: {fileID: 11400000, guid: f1fbad144250d0f47bbd7140dcb06d91, type: 2}
+    weight: 400
+  - item: {fileID: 11400000, guid: a85097981ddca8c418e4545a93434caf, type: 2}
+    weight: 70
+  - item: {fileID: 11400000, guid: 9689283cf0c4c39479b54860c0707283, type: 2}
+    weight: 20
+  - item: {fileID: 11400000, guid: 61f627e540c42874c92935a068992752, type: 2}
+    weight: 10
+  icon: {fileID: 0}
+  price: 5000000
