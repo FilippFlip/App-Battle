@@ -35,5 +35,5 @@ MonoBehaviour:
     weight: 20
   - item: {fileID: 11400000, guid: 61f627e540c42874c92935a068992752, type: 2}
     weight: 10
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: d518776d169f2f34981adcc901f07b9a, type: 3}
   price: 5000000
