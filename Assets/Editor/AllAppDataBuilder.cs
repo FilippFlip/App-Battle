@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -60,15 +61,26 @@ public static class AllAppDataBuilder
             ? AssetDatabase.FindAssets("t:AppData")
             : AssetDatabase.FindAssets("t:AppData", SearchFolders);
 
+        var visible = new Dictionary<AppData, bool>();
+        foreach (AppEntry entry in registry.apps)
+        {
+            if (entry.app != null) visible[entry.app] = entry.visibleInUpgrade;
+        }
+
         var found = guids
             .Select(AssetDatabase.GUIDToAssetPath)
             .Distinct()
             .Select(AssetDatabase.LoadAssetAtPath<AppData>)
             .Where(asset => asset != null)
             .OrderBy(asset => asset.name, StringComparer.Ordinal)
+            .Select(asset => new AppEntry
+            {
+                app = asset,
+                visibleInUpgrade = !visible.TryGetValue(asset, out bool wasVisible) || wasVisible
+            })
             .ToList();
 
-        if (registry.apps != null && registry.apps.SequenceEqual(found)) return false;
+        if (registry.apps.Select(entry => entry.app).SequenceEqual(found.Select(entry => entry.app))) return false;
 
         Undo.RecordObject(registry, "Rebuild AllAppData");
         registry.apps = found;

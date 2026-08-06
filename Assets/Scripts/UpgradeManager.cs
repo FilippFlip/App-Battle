@@ -7,11 +7,15 @@ public class UpgradeManager : MonoBehaviour
     public AppSlot rightAppSlot;
     void Start()
     {
-        foreach(var data in appData.apps)
+        foreach(var entry in appData.apps)
         {
+            if (entry.visibleInUpgrade==false)
+            {
+                continue;
+            }
             var obj =Instantiate(rightAppSlot,availableContentHolder);
-            obj.icon.sprite=data.icon;
-            obj.price.text=data.price.ToString();
+            obj.icon.sprite=entry.app.icon;
+            obj.price.text=entry.app.price.ToString();
         }
 
     }
