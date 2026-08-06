@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Poo 8
   m_EditorClassIdentifier: 
   price: 128
-  icon: {fileID: -3292649740517936162, guid: 7c3aec8fd802ec049b53ae76277da0e1, type: 3}
+  icon: {fileID: 21300000, guid: 7c3aec8fd802ec049b53ae76277da0e1, type: 3}

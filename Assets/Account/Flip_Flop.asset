@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021556a8af4d53d4f9d83f162ba00059, type: 3}
   m_Name: Flip_Flop
   m_EditorClassIdentifier: 
-  crystals: 1
+  crystals: 210
   playerName: Flip_Flop
-  casesOpened: 48
+  casesOpened: 462
   upgradesMade: 0
-  bestDrop: {fileID: 11400000, guid: 7f1abe0d31ea4f248bbe80054385b474, type: 2}
-  wonApps:
-  - {fileID: 11400000, guid: 7f1abe0d31ea4f248bbe80054385b474, type: 2}
+  bestDrop: {fileID: 11400000, guid: a8bc8ddc7d958d5449ebef0e62debc5c, type: 2}
+  wonApps: []

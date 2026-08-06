@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Poo 2
   m_EditorClassIdentifier: 
   price: 122
-  icon: {fileID: -2792588267315151467, guid: 86fbcf567f210dd4193e6667d5aef91b, type: 3}
+  icon: {fileID: 21300000, guid: ed663b9afdc41e942a5a411eb3583122, type: 3}
