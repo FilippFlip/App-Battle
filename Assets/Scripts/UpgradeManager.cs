@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class UpgradeManager : MonoBehaviour
@@ -7,7 +8,7 @@ public class UpgradeManager : MonoBehaviour
     public AppSlot rightAppSlot;
     void Start()
     {
-        foreach(var entry in appData.apps)
+        foreach (var entry in appData.apps.OrderBy(entry => entry.app.price)) 
         {
             if (entry.visibleInUpgrade==false)
             {
