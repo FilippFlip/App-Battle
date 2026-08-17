@@ -6751,7 +6751,7 @@ MonoBehaviour:
   chanceText: {fileID: 147072774}
   fillBG: {fileID: 200791785}
   hit: 0
-  spinDuration: {x: 2.5, y: 3.5}
+  spinDuration: {x: 3, y: 4}
   startSpeed: {x: 720, y: 1080}
   curve:
     serializedVersion: 2
@@ -6766,14 +6766,32 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.57855296
-      value: 0.29676706
+      time: 0.35108042
+      value: 0.72565156
+      inSlope: -0.8162395
+      outSlope: -0.8162395
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6212776
+      value: 0.41319162
       inSlope: -2.2969244
       outSlope: -2.2969244
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.079306394
       outWeight: 0.07457901
+    - serializedVersion: 3
+      time: 0.7921419
+      value: 0.10211631
+      inSlope: -1.0563116
+      outSlope: -1.0563116
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0
