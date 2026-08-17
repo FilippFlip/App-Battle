@@ -11,9 +11,14 @@ public class UpgradeChance : MonoBehaviour
     public TMP_Text chanceText;
     public Image fillBG;
     public bool hit;
+
+    public Vector2 spinDuration;
+    public Vector2 startSpeed;
+    public AnimationCurve curve;
+    private float progress;
     void Start()
     {
-        
+        ArrowAnimation();
     }
 
     void Update()
@@ -38,6 +43,23 @@ public class UpgradeChance : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+    private async void ArrowAnimation()
+    {
+        float dur = Random.Range(spinDuration.x, spinDuration.y);
+        float speed=Random.Range(startSpeed.x, startSpeed.y);
+
+        float time = 0;
+        float curSpeed;
+        while (progress <= 1)
+        {
+            time += Time.deltaTime;
+            progress = time / dur;
+            curSpeed = curve.Evaluate(progress) * speed * Time.deltaTime;
+            arrow.transform.Rotate(0, 0, -curSpeed);
+            await Awaitable.NextFrameAsync();
+
         }
     }
 }
