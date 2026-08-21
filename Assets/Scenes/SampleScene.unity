@@ -3512,7 +3512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.500031, y: 45.443268}
+  m_AnchoredPosition: {x: 8.500031, y: 32.301792}
   m_SizeDelta: {x: 458.7547, y: 59.811}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311370277
@@ -14516,6 +14516,7 @@ MonoBehaviour:
   leftPrice: {fileID: 406911054}
   rightPrice: {fileID: 1720030738}
   profile: {fileID: 11400000, guid: 6e1a67bf179b1b14983b13f51f4e0799, type: 2}
+  chance1: {fileID: 676261241}
 --- !u!1 &1269618931
 GameObject:
   m_ObjectHideFlags: 0

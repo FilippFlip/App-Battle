@@ -23,8 +23,8 @@ public class UpgradeChance : MonoBehaviour
 
     void Update()
     {
-        fillBG.fillAmount = chance/100;
-        chanceText.text= chance.ToString()+'%';
+        fillBG.fillAmount = chance;
+        chanceText.text= (chance*100).ToString()+'%';
         hit = ArrowHit();
     }
     private bool ArrowHit()

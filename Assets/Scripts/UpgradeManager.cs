@@ -16,23 +16,39 @@ public class UpgradeManager : MonoBehaviour
     public Image rightIcon;
     public TMP_Text leftPrice;
     public TMP_Text rightPrice;
-
     public PlayerProfile profile;
-    void Start()
+    public UpgradeChance chance1;
+
+    private AppData lSlot;
+    private AppData rSlot;
+    
+    private void Update()
+    {
+        if (rSlot!= null&&lSlot!=null)
+        {
+            float chance =(float) lSlot.price /(float) rSlot.price ;
+            chance1.chance = chance;
+        }
+        else
+        {
+            chance1.chance = 0;
+        }
+    }
+    private void OnEnable()
     {
         leftInfo.SetActive(false);
         rightInfo.SetActive(false);
-        foreach (var entry in appData.apps.OrderBy(entry => entry.app.price)) 
+        foreach (var entry in appData.apps.OrderBy(entry => entry.app.price))
         {
-            if (entry.visibleInUpgrade==false)
+            if (entry.visibleInUpgrade == false)
             {
                 continue;
             }
-            var obj =Instantiate(rightAppSlot,rightContent);
-            obj.icon.sprite=entry.app.icon;
-            obj.price.text=entry.app.price.ToString();
+            var obj = Instantiate(rightAppSlot, rightContent);
+            obj.icon.sprite = entry.app.icon;
+            obj.price.text = entry.app.price.ToString();
             obj.appData = entry.app;
-            obj.GetComponent<Button>().onClick.AddListener(()=>FillRightInfoSlot(obj));
+            obj.GetComponent<Button>().onClick.AddListener(() => FillRightInfoSlot(obj));
         }
         foreach (var app in profile.wonApps)
         {
@@ -43,17 +59,25 @@ public class UpgradeManager : MonoBehaviour
             obj.GetComponent<Button>().onClick.AddListener(() => FillLeftInfoSlot(obj));
         }
     }
+    private void OnDisable()
+    {
+        rSlot = null;
+        lSlot = null;
 
+    }
     private void FillRightInfoSlot(AppSlot slot)
     {
         rightInfo.SetActive(true);
         rightIcon.sprite = slot.appData.icon;
-        rightPrice.text = slot.appData.price.ToString();    
+        rightPrice.text = slot.appData.price.ToString();
+        rSlot = slot.appData;
     }
     private void FillLeftInfoSlot(AppSlot slot) 
     {
         leftInfo.SetActive(true);
         leftIcon.sprite = slot.appData.icon;
         leftPrice.text = slot.appData.price.ToString();
+        lSlot = slot.appData;
     }
+
 }
