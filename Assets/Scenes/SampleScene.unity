@@ -14428,7 +14428,6 @@ GameObject:
   - component: {fileID: 1269166120}
   - component: {fileID: 1269166119}
   - component: {fileID: 1269166121}
-  - component: {fileID: 1269166122}
   m_Layer: 0
   m_Name: system
   m_TagString: Untagged
@@ -14493,30 +14492,6 @@ MonoBehaviour:
   profileSpace: {fileID: 671516215}
   slotPrefab: {fileID: 6942662019266650506, guid: db3e18987662a2649a29164be009311e, type: 3}
   priceText: {fileID: 915688136}
---- !u!114 &1269166122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269166118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a022558d3c298641b35b6174590b216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  appData: {fileID: 11400000, guid: b7f5ddd1f2fba8b41b5b73a82d4c6ac6, type: 2}
-  rightContent: {fileID: 87502624}
-  leftContent: {fileID: 1321823732}
-  rightAppSlot: {fileID: 6942662019266650506, guid: 4895753b98d2d4e47b6297c7b14ed947, type: 3}
-  leftInfo: {fileID: 1578198161}
-  rightInfo: {fileID: 696410996}
-  leftIcon: {fileID: 1689395890}
-  rightIcon: {fileID: 1115148069}
-  leftPrice: {fileID: 406911054}
-  rightPrice: {fileID: 1720030738}
-  profile: {fileID: 11400000, guid: 6e1a67bf179b1b14983b13f51f4e0799, type: 2}
-  chance1: {fileID: 676261241}
 --- !u!1 &1269618931
 GameObject:
   m_ObjectHideFlags: 0
@@ -23068,6 +23043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115669759}
   - component: {fileID: 2115669760}
+  - component: {fileID: 2115669761}
   m_Layer: 5
   m_Name: Upgrade
   m_TagString: Untagged
@@ -23109,6 +23085,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115669758}
   m_CullTransparentMesh: 1
+--- !u!114 &2115669761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115669758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a022558d3c298641b35b6174590b216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appData: {fileID: 11400000, guid: b7f5ddd1f2fba8b41b5b73a82d4c6ac6, type: 2}
+  rightContent: {fileID: 87502624}
+  leftContent: {fileID: 1321823732}
+  rightAppSlot: {fileID: 6942662019266650506, guid: 4895753b98d2d4e47b6297c7b14ed947, type: 3}
+  leftInfo: {fileID: 1578198161}
+  rightInfo: {fileID: 696410996}
+  leftIcon: {fileID: 1689395890}
+  rightIcon: {fileID: 1115148069}
+  leftPrice: {fileID: 406911054}
+  rightPrice: {fileID: 1720030738}
+  profile: {fileID: 11400000, guid: 6e1a67bf179b1b14983b13f51f4e0799, type: 2}
+  chance1: {fileID: 676261241}
 --- !u!1 &2118485666
 GameObject:
   m_ObjectHideFlags: 0

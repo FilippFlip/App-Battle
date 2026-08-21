@@ -1,6 +1,8 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Jobs;
+using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
 using static UnityEngine.EventSystems.EventTrigger;
 
@@ -63,7 +65,20 @@ public class UpgradeManager : MonoBehaviour
     {
         rSlot = null;
         lSlot = null;
-
+        foreach (Transform child in rightContent)
+        {
+            if (child.TryGetComponent<AppSlot>(out var slot))
+            {
+                Destroy(slot.gameObject);
+            }
+        }
+        foreach (Transform child in leftContent)
+        {
+            if (child.TryGetComponent<AppSlot>(out var slot))
+            {
+                Destroy(slot.gameObject);
+            }
+        }
     }
     private void FillRightInfoSlot(AppSlot slot)
     {
