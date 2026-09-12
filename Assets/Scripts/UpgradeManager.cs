@@ -1,10 +1,7 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Jobs;
-using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class UpgradeManager : MonoBehaviour
 {
@@ -38,11 +35,46 @@ public class UpgradeManager : MonoBehaviour
     }
     private void OnEnable()
     {
+        UpdateRightContent();
+        UpdateLeftContent();
+    }
+    
+
+    private void UpdateLeftContent()
+    {
         leftInfo.SetActive(false);
+        foreach (var app in profile.wonApps.OrderBy(entry => entry.price))
+        {
+            var obj = Instantiate(rightAppSlot, leftContent);
+            obj.icon.sprite = app.icon;
+            obj.price.text = app.price.ToString();
+            obj.appData = app;
+            obj.GetComponent<Button>().onClick.AddListener(() =>
+            {
+                FillLeftInfoSlot(obj);
+                UpdateRightContent();
+            });
+        }
+    }
+    private void UpdateRightContent()
+    {
+        rSlot = null;
+        foreach (Transform child in rightContent)
+        {
+            if (child.TryGetComponent<AppSlot>(out var slot))
+            {
+                Destroy(slot.gameObject);
+            }
+        }
         rightInfo.SetActive(false);
-        foreach (var entry in appData.apps.OrderBy(entry => entry.app.price))
+        foreach (AppEntry entry in appData.apps.OrderBy(entry => entry.app.price))
         {
             if (entry.visibleInUpgrade == false)
+            {
+                continue;
+            }
+
+            if (lSlot != null && lSlot.price >= entry.app.price)
             {
                 continue;
             }
@@ -51,14 +83,6 @@ public class UpgradeManager : MonoBehaviour
             obj.price.text = entry.app.price.ToString();
             obj.appData = entry.app;
             obj.GetComponent<Button>().onClick.AddListener(() => FillRightInfoSlot(obj));
-        }
-        foreach (var app in profile.wonApps)
-        {
-            var obj = Instantiate(rightAppSlot, leftContent);
-            obj.icon.sprite = app.icon;
-            obj.price.text = app.price.ToString();
-            obj.appData = app;
-            obj.GetComponent<Button>().onClick.AddListener(() => FillLeftInfoSlot(obj));
         }
     }
     private void OnDisable()
