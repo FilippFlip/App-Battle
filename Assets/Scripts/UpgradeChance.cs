@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,15 +17,17 @@ public class UpgradeChance : MonoBehaviour
     public Vector2 startSpeed;
     public AnimationCurve curve;
     private float progress;
-    void Start()
-    {
-        ArrowAnimation();
-    }
+    
 
     void Update()
     {
         fillBG.fillAmount = chance;
-        chanceText.text= (chance*100).ToString()+'%';
+        int digits = 3;
+        if (chance > 0)
+        {
+            digits = Mathf.Clamp(-Mathf.FloorToInt(Mathf.Log10(chance)), 3, 15);
+        }
+        chanceText.text = (chance * 100f).ToString("0." + new string('#', digits - 2)) + "%";
         hit = ArrowHit();
     }
     private bool ArrowHit()
@@ -45,10 +48,10 @@ public class UpgradeChance : MonoBehaviour
             return false;
         }
     }
-    private async void ArrowAnimation()
+    public async Awaitable ArrowAnimation()
     {
-        float dur = Random.Range(spinDuration.x, spinDuration.y);
-        float speed=Random.Range(startSpeed.x, startSpeed.y);
+        float dur = UnityEngine.Random.Range(spinDuration.x, spinDuration.y);
+        float speed= UnityEngine.Random.Range(startSpeed.x, startSpeed.y);
 
         float time = 0;
         float curSpeed;

@@ -1248,7 +1248,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 40}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &87502625
 MonoBehaviour:
@@ -2105,7 +2105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.971138, y: 0}
+  m_AnchoredPosition: {x: -0.00001335144, y: 0}
   m_SizeDelta: {x: 106.7382, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147072774
@@ -2162,7 +2162,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2549,7 +2549,7 @@ RectTransform:
   m_GameObject: {fileID: 200791783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.98, y: 0.98, z: 1}
+  m_LocalScale: {x: 0.88, y: 0.88, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 676261238}
@@ -3390,7 +3390,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -22.167381, w: -49.654934}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &294235265
@@ -3558,7 +3558,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 311370278}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1269166122}
+        m_TargetAssemblyTypeName: UpgradeLogic, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &311370278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6902,7 +6914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ce4830074603d4d9bc9298a6137900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chance: 50
+  chance: 100
   arrow: {fileID: 1937363699}
   chanceText: {fileID: 147072774}
   fillBG: {fileID: 200791785}
@@ -7583,7 +7595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &725919630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14428,6 +14440,7 @@ GameObject:
   - component: {fileID: 1269166120}
   - component: {fileID: 1269166119}
   - component: {fileID: 1269166121}
+  - component: {fileID: 1269166122}
   m_Layer: 0
   m_Name: system
   m_TagString: Untagged
@@ -14492,6 +14505,22 @@ MonoBehaviour:
   profileSpace: {fileID: 671516215}
   slotPrefab: {fileID: 6942662019266650506, guid: db3e18987662a2649a29164be009311e, type: 3}
   priceText: {fileID: 915688136}
+--- !u!114 &1269166122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269166118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a1f1375f3255da4d94844fc5b5d3653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 2115669761}
+  upgradeButton: {fileID: 311370277}
+  upChance: {fileID: 676261241}
+  playerProfile: {fileID: 11400000, guid: 6e1a67bf179b1b14983b13f51f4e0799, type: 2}
 --- !u!1 &1269618931
 GameObject:
   m_ObjectHideFlags: 0
@@ -15100,7 +15129,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.00012207031}
-  m_SizeDelta: {x: 0, y: -488.8977}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1321823733
 MonoBehaviour:
@@ -23050,7 +23079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2115669759
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23066,10 +23095,10 @@ RectTransform:
   - {fileID: 853747229}
   - {fileID: 1578198162}
   - {fileID: 696410997}
-  - {fileID: 311370276}
   - {fileID: 676261238}
   - {fileID: 1410012313}
   - {fileID: 1375942364}
+  - {fileID: 311370276}
   m_Father: {fileID: 802203084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -23108,7 +23137,8 @@ MonoBehaviour:
   leftPrice: {fileID: 406911054}
   rightPrice: {fileID: 1720030738}
   profile: {fileID: 11400000, guid: 6e1a67bf179b1b14983b13f51f4e0799, type: 2}
-  chance1: {fileID: 676261241}
+  lSlot: {fileID: 0}
+  rSlot: {fileID: 0}
 --- !u!1 &2118485666
 GameObject:
   m_ObjectHideFlags: 0

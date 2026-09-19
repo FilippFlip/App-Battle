@@ -19,28 +19,14 @@ public class UpgradeManager : MonoBehaviour
     public TMP_Text leftPrice;
     public TMP_Text rightPrice;
     public PlayerProfile profile;
-    public UpgradeChance chance1;
-
-    private AppData lSlot;
-    private AppData rSlot;
+    public AppData lSlot;
+    public AppData rSlot;
     
-    private void Update()
-    {
-        if (rSlot!= null&&lSlot!=null)
-        {
-            float chance =(float) lSlot.price /(float) rSlot.price ;
-            chance1.chance = chance;
-        }
-        else
-        {
-            chance1.chance = 0;
-        }
-    }
+    
     private void OnEnable()
     {
         UpdateRightContentSlot();
-        UpdateLeftContentSlot();
-                  
+        UpdateLeftContentSlot();                 
     }
     private void OnDisable()
     {
@@ -75,7 +61,7 @@ public class UpgradeManager : MonoBehaviour
         leftPrice.text = slot.appData.price.ToString();
         lSlot = slot.appData;
     }
-    private void UpdateRightContentSlot()
+    public void UpdateRightContentSlot()
     {
         rightInfo.SetActive(false);
         rSlot = null;
@@ -104,7 +90,7 @@ public class UpgradeManager : MonoBehaviour
             obj.GetComponent<Button>().onClick.AddListener(() => FillRightInfoSlot(obj));
         }
     }
-    private void UpdateLeftContentSlot() 
+    public void UpdateLeftContentSlot() 
     {
         leftInfo.SetActive(false);
         foreach (var app in profile.wonApps.OrderBy(entry => entry.price))
@@ -120,4 +106,5 @@ public class UpgradeManager : MonoBehaviour
             });
         }
     }    
+    
 }
