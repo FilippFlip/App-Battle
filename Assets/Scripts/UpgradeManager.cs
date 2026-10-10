@@ -1,7 +1,10 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Jobs;
+using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class UpgradeManager : MonoBehaviour
 {
@@ -16,74 +19,14 @@ public class UpgradeManager : MonoBehaviour
     public TMP_Text leftPrice;
     public TMP_Text rightPrice;
     public PlayerProfile profile;
-    public UpgradeChance chance1;
-
-    private AppData lSlot;
-    private AppData rSlot;
+    public AppData lSlot;
+    public AppData rSlot;
     
-    private void Update()
-    {
-        if (rSlot!= null&&lSlot!=null)
-        {
-            float chance =(float) lSlot.price /(float) rSlot.price ;
-            chance1.chance = chance;
-        }
-        else
-        {
-            chance1.chance = 0;
-        }
-    }
+    
     private void OnEnable()
     {
-        UpdateRightContent();
-        UpdateLeftContent();
-    }
-    
-
-    private void UpdateLeftContent()
-    {
-        leftInfo.SetActive(false);
-        foreach (var app in profile.wonApps.OrderBy(entry => entry.price))
-        {
-            var obj = Instantiate(rightAppSlot, leftContent);
-            obj.icon.sprite = app.icon;
-            obj.price.text = app.price.ToString();
-            obj.appData = app;
-            obj.GetComponent<Button>().onClick.AddListener(() =>
-            {
-                FillLeftInfoSlot(obj);
-                UpdateRightContent();
-            });
-        }
-    }
-    private void UpdateRightContent()
-    {
-        rSlot = null;
-        foreach (Transform child in rightContent)
-        {
-            if (child.TryGetComponent<AppSlot>(out var slot))
-            {
-                Destroy(slot.gameObject);
-            }
-        }
-        rightInfo.SetActive(false);
-        foreach (AppEntry entry in appData.apps.OrderBy(entry => entry.app.price))
-        {
-            if (entry.visibleInUpgrade == false)
-            {
-                continue;
-            }
-
-            if (lSlot != null && lSlot.price >= entry.app.price)
-            {
-                continue;
-            }
-            var obj = Instantiate(rightAppSlot, rightContent);
-            obj.icon.sprite = entry.app.icon;
-            obj.price.text = entry.app.price.ToString();
-            obj.appData = entry.app;
-            obj.GetComponent<Button>().onClick.AddListener(() => FillRightInfoSlot(obj));
-        }
+        UpdateRightContentSlot();
+        UpdateLeftContentSlot();                 
     }
     private void OnDisable()
     {
@@ -118,5 +61,50 @@ public class UpgradeManager : MonoBehaviour
         leftPrice.text = slot.appData.price.ToString();
         lSlot = slot.appData;
     }
+    public void UpdateRightContentSlot()
+    {
+        rightInfo.SetActive(false);
+        rSlot = null;
+        foreach (Transform child in rightContent)
+        {
+            if (child.TryGetComponent<AppSlot>(out var slot))
+            {
+                Destroy(slot.gameObject);
+            }
+        }
+        foreach (var entry in appData.apps.OrderBy(entry => entry.app.price))
+        {
+            if (entry.visibleInUpgrade == false)
+            {
+                continue;
+            }
+            if (lSlot!=null&&lSlot.price>=entry.app.price)
+            {
+                continue;
+            }
 
+            var obj = Instantiate(rightAppSlot, rightContent);
+            obj.icon.sprite = entry.app.icon;
+            obj.price.text = entry.app.price.ToString();
+            obj.appData = entry.app;
+            obj.GetComponent<Button>().onClick.AddListener(() => FillRightInfoSlot(obj));
+        }
+    }
+    public void UpdateLeftContentSlot() 
+    {
+        leftInfo.SetActive(false);
+        foreach (var app in profile.wonApps.OrderBy(entry => entry.price))
+        {
+            var obj = Instantiate(rightAppSlot, leftContent);
+            obj.icon.sprite = app.icon;
+            obj.price.text = app.price.ToString();
+            obj.appData = app;
+            obj.GetComponent<Button>().onClick.AddListener(() =>
+            {
+                FillLeftInfoSlot(obj);
+                UpdateRightContentSlot();
+            });
+        }
+    }    
+    
 }
